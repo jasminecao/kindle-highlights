@@ -1,0 +1,44 @@
+body {
+  width: 275px;
+  height: 450px;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  margin-top: 0.1em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+form {
+  text-align: center;
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  width: 95%;
+  padding: 0.5em 0.5em;
+  margin: 0.5em auto;
+  display: inline-block;
+  border: 0px none;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 3px;
+  color: #845EC2;
+}
+
+button:hover {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 2pt 2pt #845EC2;
+}
+
+#login {
+  margin: 3em auto;
+}

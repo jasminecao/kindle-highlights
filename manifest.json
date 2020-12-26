@@ -1,0 +1,17 @@
+{
+	"name": "Kindling",
+	"version": "1.0",
+	"description": "Export kindle highlights",
+	"permissions": [
+		"activeTab",
+		"declarativeContent",
+		"storage",
+		"tabs",
+		"<all_urls>",
+		"http://localhost:3000/*"
+	],
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"manifest_version": 2
+}
