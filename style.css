@@ -1,51 +1,32 @@
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
-@supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
-}
-
 body {
   width: 275px;
   height: 275px;
-  background-color: #C6E1E8;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #17315b;
+  padding: 0.5em;
 }
-
-/* h1 {
-  font-family: 'Nunito', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 41px;
-  margin-top: 0.1em;
-  text-align: center;
-  color: #FFFFFF;
-} */
 
 form {
   text-align: center;
 }
 
 button {
-  /* font-family: 'Nunito', sans-serif; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: bold;
-  width: 95%;
-  padding: 0.5em 0.5em;
+  width: 100%;
   margin: 0.5em auto;
   display: inline-block;
-  border: 0px none;
+  border: 1px solid #c7dbe9;
   box-sizing: border-box;
   background: white;
   border-radius: 3px;
-  color: #845EC2;
+  color: #17315b;
+  padding: 0.5em;
 }
 
 button:hover {
   cursor: pointer;
   outline: none;
-  box-shadow: 0 0 2pt 2pt #845EC2;
-}
-
-#login {
-  margin: 3em auto;
+  box-shadow: 0 0 2pt 2pt #c7dbe9;
 }

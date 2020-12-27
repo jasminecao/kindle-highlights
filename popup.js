@@ -7,12 +7,20 @@ document.getElementById('kindle').addEventListener('click', () => {
 });
 
 function injectTheScript() {
-	console.log('injected')
 	chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-		// query the active tab, which will be only one tab
-		//and inject the script in it
 		chrome.tabs.executeScript(tabs[0].id, { file: 'content_script.js' });
 	});
 }
 
 document.getElementById('export').addEventListener('click', injectTheScript);
+
+chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse) {
+		console.log(sender.tab ?
+					"from a content script:" + sender.tab.url :
+					"from the extension");
+		if (request.data) {
+			document.getElementById('output').innerHTML = request.data;
+		}
+	}
+  );
